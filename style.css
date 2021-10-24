@@ -150,7 +150,7 @@ a:active {
     margin-top: 1em;
 }
 
-.dropdown-contents {
+.dropdown-button {
     background-color: #ffffff;
     color: #000000;
     padding: 4px 8px;
@@ -174,6 +174,40 @@ a:active {
     letter-spacing: 0.03em;
 }
 
+.dropdown-button:hover, .dropdown-button:focus {
+    color: #909090;
+}
+
+/* Hide dropdown list */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f4f4f4;
+    border-radius: 0px 0px 8px 8px;
+}
+
+/* Position dropdown when showing */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Show dropdown list */
+.show {display:block;}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffffff;
+}
+
+/* Free text entry */
 .text-area-format {
     border-color: #909090;
     border-radius: 8px;

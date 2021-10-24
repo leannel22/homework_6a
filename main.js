@@ -56,17 +56,22 @@ function Caramel(flavor, glaze, count, price) {
 
 
 let rolls = [Original, Blackberry, Walnut, GlutenFree, Pumpkin, Caramel];
+let glaze = ["Sugar-milk", "Vanilla-milk", "Double-chocolate", "None"];
 let product = {};
 
-// Button hovers: change color
-// function onButtonHover () {
-    
-// }
+function showDropdownContents() {
+    document.getElementById("glaze_options").classList.toggle("show");
+}
 
 function onClick () {
     const productString = JSON.stringify(product);
     console.log(productString);
     localStorage.setItem("prod",productString);
     localStorage.getItem("prod");
-    // document.getElementById("addedMessage").textContent = "The item has been added to cart!";
-  }
+    document.getElementById("glaze_dropdown").textContent = "test";
+}
+
+function selectGlaze () {
+    console.log("clicked");
+    document.getElementById("glaze_dropdown").textContent = "Sugar-milk glaze";
+}

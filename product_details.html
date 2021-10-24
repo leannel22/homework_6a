@@ -47,15 +47,22 @@
         <!-- Customization options -->
         <div>
             <!-- Dropdowns for glaze and count -->
-            <div class="input">
+            <div class="input dropdown">
                 <p class="dropdown-label">Glaze</p>
-                <button id="glaze_dropdown" class="dropdown-contents">Select glaze
+                <button id="glaze_dropdown" class="dropdown-button" onclick="showDropdownContents()">Select glaze
                     <img class="icon-smaller" src="images/Icon/dropdown_arrow.svg" alt="Dropdown icon.">
                 </button>
+                <div id="glaze_options" class="dropdown-content">
+                    <a href="#" onclick="selectGlaze()">Sugar-milk glaze</a>
+                    <a href="#">Vanilla-milk glaze</a>
+                    <a href="#">Double-chocolate glaze</a>
+                    <a href="#">None</a>
+                </div>
             </div>
+
             <div class="input">
                 <p class="dropdown-label">Count</p>
-                <button id="count_dropdown" class="dropdown-contents">Select count
+                <button id="count_dropdown" class="dropdown-button">Select count
                     <img class="icon-smaller" src="images/Icon/dropdown_arrow.svg" alt="Dropdown icon.">
                 </button>
             </div>
