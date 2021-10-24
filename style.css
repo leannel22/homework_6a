@@ -316,3 +316,7 @@ a:active {
 .inline-images {
     margin-right: 3rem;
 }
+
+:disabled {
+    background-color: #909090;
+}

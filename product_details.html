@@ -19,11 +19,10 @@
             <div class="nav">
                 <a href="home.html" class="nav-tab">Home</a>
                 <a href="menu.html" class="nav-tab nav-tab-active">Menu</a>
-                <!-- <a href="product_details.html" class="nav-tab nav-tab-active">Order</a> -->
-                <!-- <p class="nav-tab nav-tab-active">Menu</p> -->
-                <!-- <img class="icon" src="images/Icon/cart.png" alt="Shopping cart icon."> -->
-                <a href="shoppingcart.html" class="nav-tab">
+                <a href="shoppingcart.html" class="nav-tab"> 
                     <img class="icon" src="images/Icon/cart.png" alt="Shopping cart icon.">
+                </a>
+                <a href="shoppingcart.html" id="cartCount" class="link"> 
                 </a>
             </div>
         </div>
@@ -62,9 +61,7 @@
 
             <div class="input">
                 <p class="dropdown-label">Count</p>
-                <!-- <button id="count_dropdown" class="dropdown-button">Select count
-                    <img class="icon-smaller" src="images/Icon/dropdown_arrow.svg" alt="Dropdown icon.">
-                </button> -->
+
                 <!-- Radio buttons for count -->
                 <input type="radio" id="count1" name="count" value="1">
                 <label for="count1">1 roll</label><br>
@@ -100,6 +97,7 @@
 
         <hr>
 
+        <!-- Add to cart button -->
         <a>
             <button id="add-cart-button" class="button" onclick="updateCartMessage()">
                 Add to cart
