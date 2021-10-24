@@ -150,6 +150,11 @@ a:active {
     margin-top: 1em;
 }
 
+.bubble-button {
+    border-radius: 100%;
+    padding: 0.5em 0.75em;
+}
+
 .dropdown-button {
     background-color: #ffffff;
     color: #000000;
@@ -174,7 +179,7 @@ a:active {
     letter-spacing: 0.03em;
 }
 
-.dropdown-button:hover, .dropdown-button:focus {
+.dropdown-button:hover{
     color: #909090;
 }
 
@@ -204,7 +209,7 @@ a:active {
 }
 
 .dropdown-content a:hover {
-    background-color: #ffffff;
+    color: #E18580;
 }
 
 /* Free text entry */

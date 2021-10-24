@@ -63,6 +63,7 @@ function showDropdownContents() {
     document.getElementById("glaze_options").classList.toggle("show");
 }
 
+// Trying to make a backend JSON data storage
 function onClick () {
     const productString = JSON.stringify(product);
     console.log(productString);
@@ -71,7 +72,27 @@ function onClick () {
     document.getElementById("glaze_dropdown").textContent = "test";
 }
 
-function selectGlaze () {
+// Individual functions for each dropdown option (will be optimized in the future)
+function selectSMGlaze () {
     console.log("clicked");
     document.getElementById("glaze_dropdown").textContent = "Sugar-milk glaze";
+    showDropdownContents();
+}
+
+function selectVMGlaze () {
+    console.log("clicked");
+    document.getElementById("glaze_dropdown").textContent = "Vanilla-milk glaze";
+    showDropdownContents();
+}
+
+function selectDCGlaze () {
+    console.log("clicked");
+    document.getElementById("glaze_dropdown").textContent = "Double-chocolate glaze";
+    showDropdownContents();
+}
+
+function selectNoGlaze () {
+    console.log("clicked");
+    document.getElementById("glaze_dropdown").textContent = "None";
+    showDropdownContents();
 }
