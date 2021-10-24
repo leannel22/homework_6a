@@ -95,5 +95,5 @@ function selectNoGlaze () {
 
 function updateCartMessage()  {
     document.getElementById("cartMessage").textContent = "Item has been added to cart!🧁";
-    document.getElementById("cartCount").textContent = "1";
+    document.getElementById("cartCount").textContent = "Updated: 3 total items";
 }
