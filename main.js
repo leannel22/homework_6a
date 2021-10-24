@@ -74,25 +74,25 @@ function onClick () {
 
 // Individual functions for each dropdown option (will be optimized in the future)
 function selectSMGlaze () {
-    console.log("clicked");
     document.getElementById("glaze_dropdown").textContent = "Sugar-milk glaze";
     showDropdownContents();
 }
 
 function selectVMGlaze () {
-    console.log("clicked");
     document.getElementById("glaze_dropdown").textContent = "Vanilla-milk glaze";
     showDropdownContents();
 }
 
 function selectDCGlaze () {
-    console.log("clicked");
     document.getElementById("glaze_dropdown").textContent = "Double-chocolate glaze";
     showDropdownContents();
 }
 
 function selectNoGlaze () {
-    console.log("clicked");
     document.getElementById("glaze_dropdown").textContent = "None";
     showDropdownContents();
+}
+
+function updateCartMessage()  {
+    document.getElementById("cartMessage").textContent = "Item has been added to cart!🧁";
 }
